@@ -14,6 +14,7 @@ main {
     gap: 8rem;
     padding: 0 10%;
     padding-top: 100px;
+    padding-bottom: 40px;
     background: #ffdc60;
 }
 footer {
@@ -410,7 +411,6 @@ footer {
   background: none;
 }
 footer {
-  margin-top: 40px;
   background-color: #343434;
   padding: 12px 24px;
 }
