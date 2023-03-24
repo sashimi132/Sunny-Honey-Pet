@@ -49,6 +49,7 @@ footer {
   background: white;
 }
 .navbar__wrap {
+  padding: 0 12px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -115,9 +116,11 @@ footer {
     border-radius: 32px;
 }
 .slide__body {
-    width: 50%;
+    height: 80%;
+    max-width: 50%;
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
     gap: 1rem;
     flex-direction: column;
 }
@@ -148,8 +151,7 @@ footer {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 32px;
 }
 .slide-btn {
     position: relative;
@@ -406,7 +408,18 @@ footer {
   border: none;
   background: none;
 }
-
+footer {
+  margin-top: 40px;
+  background-color: #343434;
+  padding: 12px 24px;
+}
+.footer__body {
+  color: #ffffff96;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 1000px) {
     .slide {
         flex-direction: column-reverse;
