@@ -1,55 +1,11 @@
-// Устанавливаем номер активного слайда
-let activeIndex = 0;
-// Получаем все слайды
-const slides = [...document.querySelectorAll('.slide')]
-// Получаем кол-во слайдов
-let slidesCount = slides.length - 1
-// Получаем кнопку следующего слайда
-const btnNext = document.querySelector('.slide-next')
-// Получаем кнопку предыдущего слайда
-const btnPrev = document.querySelector('.slide-prev')
-
-// Функция для показа слайдов
-function showSlide(id) {
-    // Перебираем все слайды и скрываем их
-    slides.map(slide =>{
-        slide.style.opacity='0'
-        setTimeout(()=>{
-          slide.style.display='none'
-        }, 500)
-    })
-    setTimeout(()=>{
-      slides[id].style.display='flex'
-      slides[id].style.opacity='1'
-    }, 500)
-    // Показываем активный слайд
-
-}
-
-// Показываем дефолтный слайд
-showSlide(activeIndex)
-
-// Добавляем события клика на нашу кнопку вперед
-btnNext.addEventListener('click', () => {
-    console.log(activeIndex, slidesCount)
-    // Проверка на корректное переключение слайдов кнопкой
-    if (activeIndex < slidesCount) {
-        activeIndex=activeIndex+1
-    } else {
-        activeIndex = 0
-    }
-    showSlide(activeIndex)
+const inputName = document.querySelectorAll('.maps-form input')[0]
+const inputText = document.querySelectorAll('.maps-form input')[1]
+const message = document.querySelector('.maps-form a')
+inputName.addEventListener('input', ()=>{
+    message.setAttribute('href', `mailto:blog@htmlacademy.ru?body=Здраствуйте, меня зовут ${inputName.value}. <br> Мой вопрос: ${inputText.value}`)
 })
-
-// Добавляем события клика на нашу кнопку назад
-btnPrev.addEventListener('click', () => {
-    // Проверка на корректное переключение слайдов кнопкой
-    if (activeIndex == 0) {
-      activeIndex = slidesCount
-    } else {
-      activeIndex=activeIndex - 1
-    }    
-    showSlide(activeIndex)
+inputText.addEventListener('input', ()=>{
+    message.setAttribute('href', `mailto:blog@htmlacademy.ru?body=Здраствуйте, меня зовут ${inputName.value}. <br> Мой вопрос: ${inputText.value}`)
 })
 
 const hamb = document.querySelector("#hamb");

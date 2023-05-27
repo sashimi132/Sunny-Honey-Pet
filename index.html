@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Sunny Honey Pet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,17 +14,15 @@
               <div class="navbar__wrap">
                 <div class="hamb">
                   <div class="hamb__field" id="hamb">
-                    <span class="bar"></span> 
-                    <span class="bar"></span>
+                    <span class="bar"></span> <span class="bar"></span>
                     <span class="bar"></span>
                   </div>
                 </div>
                 <a href="#" class="logo" id="logo">Sunny Honey Pet</a>
                 <ul class="menu" id="menu">
+                  <li><a href="#service-list">Услуги</a></li>
                   <li><a href="#about">О нас</a></li>
-                  <li><a href="#prices">Наши достоинства</a></li>
-                  <li><a href="#geo">Где нас найти</a></li>
-                  <li><a href="#mail-to">Связь</a></li>
+                  <li><a href="#maps">Где нас найти</a></li>
                 </ul>
               </div>
             </div>
@@ -32,149 +30,205 @@
           <div class="popup" id="popup"></div>
     </header>
     <main>
-        <section class="slider" id="slider">
-            <div class="slider__body">
-                <button class="slide-btn slide-prev">&#60;</button>
-                <div class="slides">
-                    
-                    <div class="slide" style="background-color:#aa5a62;">
-                        <div class="slide__body">
-                            <span class="slide-title">Качество!</span>
-                            <span class="slide-sub-title">Не экономим на качестве, ведь нам важно чтобы вы к нам вернулись.</span>
-                            <button class="slide-btn-submit">Написать нам</button>
-                        </div>
-                        <div class="slide__img">
-                            <img src="imgs/slide3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slide" style="background-color:#b3c56f;">
-                        <div class="slide__body">
-                            <span class="slide-title">Цена</span>
-                            <span class="slide-sub-title">Мы стараемся поддерживать оптимальную цену продукта.</span>
-                            <button class="slide-btn-submit">Написать нам</button>
-                        </div>
-                        <div class="slide__img">
-                            <img src="imgs/slide1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slide" style="background-color:#8651ae;">
-                        <div class="slide__body">
-                            <span class="slide-title">Клиентинг</span>
-                            <span class="slide-sub-title">Давно на рынке и понимаем, чего от нас хотят наши покупатели.</span>
-                            <button class="slide-btn-submit">Написать нам</button>
-                        </div>
-                        <div class="slide__img">
-                            <img src="imgs/slide2.png" alt="">
-                        </div>
-                    </div>
-         
+        <section class="preview">
+            <div class="preview__body">
+                <div class="preview-text">
+                    <span class="preview-title">
+                        <b>Добро пожаловать</b> друг!
+                    </span>
+                    <span class="preview-subtitle">
+                        На нашем сайте вы можете ознакомиться 
+                        с нашими услугами, найти путь до нас
+                        так же задать вопрос
+                    </span>
+                    <a href="#service-list"><button class="button-hover">Перейти к услугам</button></a>
                 </div>
-                <button class="slide-btn slide-next">&#62;</button>
+            </div>
+        </section>
+        <section class="services" id="service-list">
+            <div class="services__body">
+                <div class="service-title">
+                    <b>Наши</b> услуги
+                </div>
+                <div class="service-list">
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                оздоровительные тесты
+                            </span>
+                            <span class="service-subtitle">
+                                После каждой услуги предоставленной вам, мы посторно проверим состояние вашего питомца.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                микрочипирование
+                            </span>
+                            <span class="service-subtitle">
+                                Чипирование – это ввод под кожу кошки или собаки специального микрочипа с индивидуальным кодом, и внесение в базу данных сведений о животном, породе, возрасте, кличке, также о владельце, адресе и телефоне. Некоторые базы данных предусматривают внесение дополнительных данных – о вакцинации, например.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                Ветеринарная хирургическая операция
+                            </span>
+                            <span class="service-subtitle">
+                                это комплекс взаимосвязанных хирургических манипуляций различной сложности, осуществляемые ветеринарным хирургом с целью лечения, восстановления и коррекции функций организма животного оперативным методом при помощи хирургических инструментов и оборудования.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                Вакцинация
+                            </span>
+                            <span class="service-subtitle">
+                                это профилактическое мероприятие, направленное на формирование у питомца стойкого иммунитета к вирусам и бактериям – возбудителям опасных заболеваний (бешенство, чума, кальцивирусная инфекция и других).
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                неотложная помощь
+                            </span>
+                            <span class="service-subtitle">
+                                Бывают такие ситуации, когда от скорости оказания помощи больному животному зависит его жизнь.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                уход за вашим питомцем
+                            </span>
+                            <span class="service-subtitle">
+                                Достойно нашей нашей компании приглядим за вашим питомцем.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                Интернат
+                            </span>
+                            <span class="service-subtitle">
+                                Приглядим за вашим питомцем на время вашего отъезда.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/arrow.png" width="50px">
+                        <div class="service-item-text">
+                            <span class="service-item-title">
+                                Стоматологическая помощь
+                            </span>
+                            <span class="service-subtitle">
+                                Ваш питомец нуждается в стоматологической помощи в том случае, если имеется наличие красной полосы вдоль линии десен, появляется неприятный запах изо рта, происходит  полный отказ от корма, меняется интенсивность жевания или животное делает это с большой осторожностью.
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="about" id="about">
             <div class="about__body">
-                <div class="about-text">
-                    <span class="about-title">О нас</span>
-                    <span class="about-sub-title">Магазин для продажи товаров для животных. <br> В зоомагазинах продаётся питание для животных, клетки, аквариумы, различные аксессуары.</span>
+                <div class="about-title">
+                    О<b>нас</b>
                 </div>
+                <div class="about-description">
+                    Sunny Honey Pet - это место, где вы можете найти все необходимое для своих домашних животных. Мы предлагаем широкий ассортимент кормов, игрушек, аксессуаров и товаров для ухода за животными. У нас вы найдете все для собак, кошек, грызунов, рыбок, птиц и рептилий. 
 
-                <div class="about-list">
-                    <div class="about-item">
-                        <span class="about-item-title">Качество</span>
-                        <span class="about-item-desc">Мы предлогаем лучший товар на рынке!</span>
-                    </div>
-                    <div class="about-item">
-                        <span class="about-item-title">Цена</span>
-                        <span class="about-item-desc">Наши услуги общедоступны!</span>
-                    </div>
-                    <div class="about-item">
-                        <span class="about-item-title">7 лет на рынке!</span>
-                        <span class="about-item-desc">Уже зарекомендовали себя на рынке!</span>
-                    </div>
-                    <div class="about-item">
-                        <span class="about-item-title">Популярность!</span>
-                        <span class="about-item-desc">Множество филиалов по всей стране!</span>
-                    </div>
+                    Наш зоомагазин работает только с качественными и проверенными поставщиками, что гарантирует безопасность и здоровье ваших питомцев. Мы также предлагаем консультации по уходу за животными и помощь в выборе правильного корма и аксессуаров.
+                    
+                    В нашем зоомагазине вы найдете все необходимое для создания комфортных условий жизни для своих питомцев. Мы предлагаем широкий ассортимент кормов и лакомств, игрушек, лежаков, клеток и аквариумов, а также товаров для ухода за шерстью, зубами и когтями.
+                    
+                    Посетив наш зоомагазин, вы получите профессиональную помощь в выборе товаров для своих любимцев. Мы всегда рады помочь и ответить на все ваши вопросы. Приходите к нам и обеспечьте своих питомцев всем необходимым для счастливой и здоровой жизни!
                 </div>
             </div>
         </section>
-        <section class="prices" id="prices">
-            <div class="prices__body">
-                <span class="prices-title">Информация о работе</span>
-                <div class="prices-list">
-                    <div class="prices-item">
-                        <span class="prices-item-title">Понедельник</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
+        <section class="maps" id="maps">
+            <div class="maps-title">
+                Связь <b>с нами</b>
+            </div>  
+            <div class="maps__body">
+                <div class="maps-text">
+                    <div class="maps-item">
+                        <span class="maps-item-title">
+                            наш <b>адрес</b>
+                        </span>
+                    
+                        Ростов-на-Дону, улица Тренёва, 20
+                       
+                        <b>Почта :</b>
+                        <b>Телефон :</b>
                     </div>
-                    <div class="prices-item">
-                        <span class="prices-item-title">Вторник</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
-                    </div>
-                    <div class="prices-item">
-                        <span class="prices-item-title">Среда</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
-                    </div>
-                    <div class="prices-item">
-                        <span class="prices-item-title">Четверг</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
-                    </div>
-                    <div class="prices-item">
-                        <span class="prices-item-title">Пятница</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
-                    </div>
-                    <div class="prices-item">
-                        <span class="prices-item-title">Суббота</span>
-                        <span class="prices-item-desc">Время: 9:00 - 18:00</span>
+                    <div class="maps-item">
+                        <span class="maps-item-title">
+                            <b>время</b> работы
+                        </span>
+                       
+                        <b>7 - 18</b>
+                        Вторник, Четверг, Суббота
+                        <b>10 - 21</b>
+                        Понедельник, Среда, Пятница
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="mail-to" id="mail-to">
-            <div class="mail-to__body">
-                <span class="mail-to-title">
-                    У вас остались вопросы?
-                </span>
-                <span class="mail-to-sub-title">
-                    Мы готовы на них ответить, <br> для этого свяжитесь с нами <br>
-                </span>
-                <button class="mail-to-btn">Написать</button>
-            </div>
-        </section>
-        <section class="geo" id="geo">
-            <div class="geo__body">
-                <span class="geo-title">
-                    Где нас найти?
-                </span>
-                <div style="position:relative;overflow:hidden;width: 100%;">
-                    <a href="https://yandex.ru/maps/org/rostovskiy_na_donu_kolledzh_svyazi_i_informatiki_uchebny_korpus_2/182573574642/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростовский-на-Дону колледж Связи и Информатики, учебный корпус № 2</a>
-                    <a href="https://yandex.ru/maps/39/rostov-na-donu/category/college/184106236/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Колледж в Ростове‑на‑Дону</a>
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=39.643830%2C47.208264&mode=search&oid=182573574642&ol=biz&z=17.16" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
-                    </iframe>
+                <div class="maps-prev">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Accab2507a71ddf3ef24826a9ec279123f7b1575bd74389c68c09fa9b3b28ef73&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                </div>
+                <div class="maps-form">
+                    <span class="maps-form-title">
+                        У вас <b>остались вопросы?</b>
+                    </span>
+                    <input type="text" placeholder="Введите ваше имя">
+                    <input type="text" placeholder="Введите ваше сообщение">
+                    <a><button class="button-hover">Отправить сообщение</button></a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer__body">
-            <span>© 2022-2023 Все права защищены, Sunny Honey Pet</span>
-        </div>
+        
     </footer>
-
-    <section class="modal">
-        <div class="modal__body">
-            <button class="modal-btn">x</button>
-            <div class="modal__body">
-                <span class="modal-title">Связь с нами</span>
-                <span class="modal-sub-title">Выберите удобный вариант</span>
-                <ol>
-                    <li><a href="mailto:Sunnyhoneypet@gmail.com?body=Здраствуйте, у меня остались вопросы">Написать нам на почту</a></li>
-                    <li><a href="tel:+79081961496">+7 908 196-14-96</a></li>
-                </ol>
-            </div>
-        </div>
-    </section>
     <script src="script.js"></script>
-    <script src="modal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Добавить плавную прокрутку до всех ссылок
+    $("a").on('click', function(event) {
+
+        // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+        if (this.hash !== "") {
+        // Запретить поведение щелчка якоря по умолчанию
+        event.preventDefault();
+
+        // Хранить хэш
+        var hash = this.hash;
+
+        // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+        // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+            window.location.hash = hash;
+        });
+        } // Конец, если
+    });
+    });
+    </script>
 </body>
 </html>
